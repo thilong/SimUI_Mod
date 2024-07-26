@@ -11,5 +11,6 @@ app/tools
 app/simUI-64
 app/simUI
 *.exe
+*.dll
 *.dylib
 *.zip
