@@ -9,8 +9,8 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/code",
-            "cwd": "${workspaceFolder}/app",
+            "program": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/../app",
             "env": {
                 "GO111MODULE": "on",
                 "CGO_ENABLED": "1"

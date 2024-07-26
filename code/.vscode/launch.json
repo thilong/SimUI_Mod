@@ -5,16 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug",
-            "type": "go",
+            "name": "Run",
+            "type":"coreclr",
             "request": "launch",
-            "mode": "auto",
-            "program": "${workspaceFolder}",
-            "cwd": "${workspaceFolder}../app/",
+            "console": "internalConsole",
+            "internalConsoleOptions": "neverOpen",
+            "program": "${workspaceFolder}/../app/simUI-64.exe",
             "env": {
                 "GO111MODULE": "on",
                 "CGO_ENABLED": "1"
-            }
+            },
+            "preLaunchTask": "Build"
         }
     ]
 }
