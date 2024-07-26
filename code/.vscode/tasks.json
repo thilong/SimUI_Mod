@@ -4,6 +4,18 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Pack Resources",
+            "type": "shell",
+            "command": "${workspaceFolder}/../build/packfolder.exe",
+            "args": [
+                "view",
+                "res.go",
+                "-v",
+                "res",
+                "-go"
+            ],
+        },
+        {
             "label": "Build",
             "type": "go",
             "command": "build",
@@ -22,6 +34,7 @@
                 "$go"
             ],
             "group": "build",
+            "dependsOn": ["Pack Resources"]
         }
     ]
 }
